@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUNSHINE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  
+   
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="image/logo.png" id="logo">
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i> 
+            </div>
+
+            <ul id="menu" class="hidden">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="cart.html">Order</a></li>
+                <li class="close" id="close-menu" style="display: none;">&times;</li> <!-- Close button -->
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+
+        <div class="main">
+
+            <div class="men_text">
+                <h1>Get Fresh<span>Food</span><br>in a Easy Way</h1>
+            </div>
+
+            <div class="main_image">
+                <img src="image/main_img.png">
+            </div>
+
+        </div>
+
+        <p>
+            At SUNSHINE, we believe great food brings people together. Our mission is simple: to provide fresh, flavorful meals in a warm, welcoming atmosphere. Every dish is made with quality ingredients and a love for what we do. Whether dining in or taking out, we’re here to make every bite memorable.
+        </p>
+
+        <div class="main_btn">
+            <a href="#">Order Now</a>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+    </section>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const closeButton = document.getElementById('close-menu');
+        const menu = document.getElementById('menu');
+        const logo = document.getElementById('logo');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('show'); // Toggle the menu visibility
+            logo.style.display = 'none'; // Hide the logo
+            closeButton.style.display = 'block'; // Show close button
+        });
+
+        closeButton.addEventListener('click', () => {
+            menu.classList.remove('show'); // Hide the menu
+            logo.style.display = 'block'; // Show the logo again
+            closeButton.style.display = 'none'; // Hide close button
+        });
+    </script>
+
+</body>
+
+
+
+    <!--About-->
+
+    <div class="about" id="About">
+        <div class="about_main">
+
+            <div class="image">
+                <img src="image/Food-Plate.png">
+            </div>
+
+            <div class="about_text">
+                <h1><span>About</span>sunshine</h1>
+                <h3>Why Choose us?</h3>
+                <p>
+                    At SUNSHINE, we’re more than just a place to eat – we’re a community of <br> food lovers who believe in the power of great meals to bring people <br> together. Our story began with a simple goal: to create a space where <br> delicious food meets unforgettable experiences. Every dish we serve is<br>  made with the freshest ingredients and a passion for perfection.
+
+                    Whether <br> you’re dining in or enjoying our food at home, we strive to deliver flavors <br> that satisfy and service that makes you feel welcome. Our team is dedicated<br>  to making sure every visit leaves you with a smile and a full heart.
+            </div>
+
+        </div>
+
+        <a href="#" class="about_btn">Order Now</a>
+
+    </div>
+
+
+
+    <!--Menu-->
+
+    <div class="menu" id="Menu">
+        <h1>Our<span>Menu</span></h1>
+
+        <div class="menu_box">
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/buger.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Buger (Tasty)</h2>
+                    <p>
+                        Our burgers are grilled to perfection, packed with fresh ingredients, and bursting with bold flavor in every bite.
+                    </p>
+                    <h3>#5,000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+            
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/pasta.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>pasta(Delectable)</h2>
+                    <p>
+                        Our pasta dishes are crafted with rich sauces and fresh ingredients, delivering comfort and taste in every bite.
+                    </p>
+                    <h3>#3,000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/lasagna.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>lasagna (Hearty)</h2>
+                    <p>
+                        Enjoy layers of rich meat, creamy cheese, and savory sauce in our lasagna.A comforting classic that’s always a pleaser!
+                    </p>
+                    <h3>#7,000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/chocolate_Drink.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Drink(Refreshing)</h2>
+                    <p>
+                        Quench your thirst with our selection of refreshing drinks, perfectly paired to complement your meal. Cheers to great taste!
+                    </p>
+                    <h3>#2000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/pizza.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>pizza (Yummy)</h2>
+                    <p>
+                        Indulge in our handcrafted pizzas, topped with fresh ingredients and melted cheese. A perfect slice every time!
+                    </p>
+                    <h3>#5,000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/Hot_dog.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>HotDog (Vibran)</h2>
+                    <p>
+                        Savor our classic hot dogs, grilled to perfection and topped with your favorite fixings. A quick bite of joy!
+                    </p>
+                    <h3>#1,500</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/juse.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Juse (Fruity)</h2>
+                    <p>
+                        Quench your thirst with our refreshing juices, bursting with the natural flavors of ripe fruits. Pure goodness in every sip!
+                    </p>
+                    <h3>#1,000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/biryani.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Biryani (Spicy)</h2>
+                    <p>
+                        Delight in our fragrant biryani, a perfect blend of spices, tender meat, and basmati rice. A satisfying feast for the senses!
+                    </p>
+                    <h3>#7,500</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/chocolate.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Fudge (Rich)</h2>
+                    <p>
+                        Savor our luscious chocolate, crafted for the ultimate treat. A blissful experience in every bite!
+
+
+                    </p>
+                    <h3>#500</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/ice_cream.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>IceCream (Silky)</h2>
+                    <p>
+                        Treat yourself to our delightful ice cream, available in a variety of flavors. A cool, sweet indulgence for any occasion!
+                    </p>
+                    <h3>#2000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/Spanchi.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Spanchi (Vital)</h2>
+                    <p>
+                        Enjoy our vibrant spinach, packed with vitamins and bursting with flavor. A healthy addition to any meal!
+                    </p>
+                    <h3>#3,000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/sandwich.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Sandwich(Spicy)</h2>
+                    <p>
+                        Bite into our delicious sandwiches, made with quality ingredients for a quick and satisfying meal anytime!
+                    </p>
+                    <h3>#600</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+            
+        </div>
+
+    </div>
+
+
+
+
+    <!--Gallary-->
+
+    <div class="gallary" id="Gallary">
+        <h1>Our<span>Gallary</span></h1>
+
+        <div class="gallary_image_box">
+            <div class="gallary_image">
+                <img src="image/gallary_1.jpg">
+
+                <h3>Sandwich</h3>
+                <p>
+                    Savor our tasty sandwiches, filled with quality ingredients for a quick and satisfying meal!
+
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_2.jpg">
+
+                <h3>Ice cream</h3>
+                <p>
+                    Indulge in our delightful ice cream, crafted with rich flavors for a refreshing treat any time of year!
+
+
+
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_3.jpg">
+
+                <h3>Cup Cake</h3>
+                <p>
+                    Treat yourself to our ice cream cupcakes, a delightful fusion of cake and creamy ice cream. A whimsical dessert perfect for any occasion! 
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+
+            <div class="gallary_image">
+                <img src="image/gallary_4.jpg">
+
+                <h3>Cake</h3>
+                <p>
+                    Enjoy our delicious cakes, baked to perfection and bursting with flavor. The perfect centerpiece for any celebration!
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_5.jpg">
+
+                <h3>pizza</h3>
+                <p>
+                    Dig into our delicious pizza, topped with fresh ingredients and melted cheese. A classic favorite for every occasion!
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_6.jpg">
+
+                <h3>Cake</h3>
+                <p>
+                    Savor our rich cakes, crafted with the finest ingredients for a truly indulgent treat. Perfect for celebrating life's sweet moments!
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!--Review-->
+
+    <div class="review" id="Review">
+        <h1>Customer<span>Review</span></h1>
+
+        <div class="review_box">
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/reveiw 1 a.jpg">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">MICHEAL SAM</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        I had an amazing meal at SUNSHINE! The pasta was rich and creamy, and the burger was juicy and packed with flavor. Plus, the service was top-notch! I couldn’t resist finishing off with a scoop of their delicious ice cream. This place is a gem, and I can’t wait to return!
+
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/review 2 A.jpg">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">John Deo</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        I can’t say enough good things about SUNSHINE! The spinach and cheese sandwich was fresh and full of flavor, and the ice cream was the perfect sweet ending. It’s rare to find a place that gets everything just right. I’ll be recommending this spot to all my friends!
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/reveiw 333.jpg">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">SOLA OLAREWAJU</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        I just had the best experience at SUNSHINE! The biryani was bursting with flavor, and the hot dogs were juicy and delicious. To top it off, the chocolate cake was heavenly! Every dish was a hit, and the service was friendly. I’ll definitely be coming back for more!
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/review44.jpg">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">MARY TOLA</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        I recently ordered the pizza and ice cream cupcakes from SUNSHINE, and I was blown away! The pizza was incredibly cheesy and loaded with fresh toppings, while the ice cream cupcakes were the perfect mix of cake and creamy goodness. Every bite was a delight! I can’t wait to come back and try more from the menu. Highly recommend!
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Order-->
+
+    <div class="order" id="Order">
+        <h1><span>Order</span>Now</h1>
+
+        <div class="order_main">
+
+            <div class="order_image">
+                <img src="image/order_image.png">
+            </div>
+
+            <form action="#">
+
+                <div class="input">
+                    <p>Name</p>
+                    <input type="text" placeholder="you name">
+                </div>
+
+                <div class="input">
+                    <p>Email</p>
+                    <input type="email" placeholder="you email">
+                </div>
+
+                <div class="input">
+                    <p>Number</p>
+                    <input placeholder="you number">
+                </div>
+
+                <div class="input">
+                    <p>How Much</p>
+                    <input type="number" placeholder="how many order">
+                </div>
+
+                <div class="input">
+                    <p>You Order</p>
+                    <input placeholder="food name">
+                </div>
+
+                <div class="input">
+                    <p>Address</p>
+                    <input placeholder="you Address">
+                </div>
+
+                <a href="#" class="order_btn">Order Now</a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Team-->
+
+    <div class="team">
+        <h1>Our<span>Team</span></h1>
+
+        <div class="team_box">
+            <div class="profile">
+                <img src="image/chef 1a.jpeg">
+
+                <div class="info">
+                    <h2 class="name">SOLA SAMUEL</h2>
+                    <p class="bio"> SOLA leads the kitchen at SUNSHINE. Their innovative approach and commitment to using the finest ingredients</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/chef 2a.jpeg">
+
+                <div class="info">
+                    <h2 class="name">POSI FAVOUR</h2>
+                    <p class="bio">POSI FAVOUR brings passion and creativity to SUNSHINE, crafting each dish with fresh ingredients and a dedication to flavor</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/chef_3aa.png">
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/chief 4aa.jpg">
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>Lagos</p>
+                <p>Akure</p>
+                <p> satellite</p>
+                <p>Ado-Ekiti</p>
+                <p>Iworoko</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Quick Link</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Menu</p>
+                <p>Gallary</p>
+                <p>Order</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our Service</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payments</p>
+                <p>24 x 7 Service</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Follows</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <p class="end"><span><i class="fa-solid fa-face-grin"></i></span></p>
+
+    </footer>
+
+
+
+    
+</body>
+</html>
