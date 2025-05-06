@@ -1,57 +1,55 @@
-🌞 Sunshine Restaurant 🍔🍕🌯
-Sunshine Restaurant is a fully responsive food ordering website crafted with HTML, CSS, and JavaScript. Designed with a sleek and modern UI, it offers users a seamless browsing and ordering experience on both desktop and mobile devices. Users can explore different food categories, add items to their cart, and see the total bill in real-time—all without page reloads.
+# 🌞 Sunshine Restaurant 🍔🍕🌯
 
-🚀 Features
-📋 Interactive Menu: Categories include Burgers, Pizza, Sandwiches, Biryani, Chicken, Paneer, and more
+Sunshine Restaurant is a responsive food ordering website built using **HTML**, **CSS**, and **JavaScript**. It offers a sleek and modern design tailored for both desktop and mobile users. Customers can browse various food categories, add items to their cart, and view the total bill — all in a smooth and interactive experience.
 
-🛒 Cart Functionality: Add, remove items, and view total price instantly
+## 🚀 Features
 
-📱 Mobile-Responsive: Optimized layout for all screen sizes
+- 📋 Interactive menu with categories: Burgers, Pizza, Sandwiches, Biryani, Chicken, Paneer, and more
+- 🛒 Functional cart system (add, remove, total price)
+- 📱 Mobile-friendly layout and responsive design
+- ⚡ Fast performance with no page reloads
+- ✨ Stylish UI built with custom CSS
 
-⚡ Fast & Smooth UX: Dynamic functionality using pure JavaScript (no page reloads)
+## 📂 Project Structure
 
-✨ Custom UI Design: A stylish and clean interface built with custom CSS
-
-📁 Project Structure
-bash
-Copy
-Edit
 sunshine-restaurant/
-│
-├── assets/              # Images, icons, and media files
+├── index.html
 ├── css/
-│   └──         # Main stylesheet
+│ └── style.css
 ├── js/
-│   └── script.js        # JavaScript logic (cart, interactions)
-├── index.html           # Homepage with menu and cart
-└── README.md            # Project description
-🛠️ Technologies Used
-HTML5
-
-CSS3
-
-JavaScript (Vanilla)
-
-🧪 How to Run Locally
-Clone the repository:
+│ └── script.js
+├── assets/
+│ └── images/
+└── README.md
 
 bash
 Copy
 Edit
+
+## 🛠️ Technologies Used
+
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla)
+
+## 🧪 How to Run Locally
+
+1. Clone the repository:
+
+```bash
 git clone https://github.com/your-username/sunshine-restaurant.git
 cd sunshine-restaurant
-Open the project in your browser:
+Open the index.html file in your browser:
 
-For Windows:
+On Windows:
 
 bash
 Copy
 Edit
 start index.html
-For macOS:
+On macOS:
 
 bash
 Copy
 Edit
 open index.html
-Or simply double-click the index.html file in your file explorer.
