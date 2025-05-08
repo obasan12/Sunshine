@@ -22,15 +22,12 @@ sunshine-restaurant/
 │ └── images/
 └── README.md
 
-bash
-Copy
-Edit
 
 ## 🛠️ Technologies Used
 
 - HTML5  
 - CSS3  
-- JavaScript (Vanilla)
+- JavaScript
 
 ## 🧪 How to Run Locally
 
