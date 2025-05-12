@@ -41,8 +41,6 @@ Open the index.html file in your browser:
 On Windows:
 
 bash
-Copy
-Edit
 start index.html
 On macOS:
 
