@@ -1,4 +1,4 @@
-# 🌞 Sunshine Restaurant 🍔🍕🌯
+# 🌞 Sunshine Restaurant 🍔🍕
 
 Sunshine Restaurant is a responsive food ordering website built using **HTML**, **CSS**, and **JavaScript**. It offers a sleek and modern design tailored for both desktop and mobile users. Customers can browse various food categories, add items to their cart, and view the total bill — all in a smooth and interactive experience.
 
