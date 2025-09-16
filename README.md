@@ -10,17 +10,6 @@ Sunshine Restaurant is a responsive food ordering website built using **HTML**, 
 - ⚡ Fast performance with no page reloads
 - ✨ Stylish UI built with custom CSS
 
-## 📂 Project Structure
-
-sunshine-restaurant/
-├── index.html
-├── css/
-│ └── style.css
-├── js/
-│ └── script.js
-├── assets/
-│ └── images/
-└── README.md
 
 
 ## 🛠️ Technologies Used
