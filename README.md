@@ -34,8 +34,7 @@ start index.html
 On macOS:
 
 bash
-Copy
-Edit
+
 open index.html
 
 
